@@ -1,0 +1,18 @@
+Download the package.
+Open the php.ini temp buffer and error fix file and copy it.
+Open your php.ini file in your phpmyadmin under settings.
+Paste the copied text over your old php.ini file and save it. 
+Restart and your website will work.
+
+If you don't want to change the whole php.ini file in your sql, 
+copy and paste
+error_reporting = E_ALL ^ E_DEPRECATED
+over your error reporting = (what it says now)
+and change your 
+output_buffering = Off
+to
+output_buffering = On
+and save the file.
+
+*This will too be deprecated soon I hear. 
+**This is only a temp fix.
